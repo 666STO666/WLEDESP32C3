@@ -1,0 +1,6 @@
+[env:custom_build]
+extends = env:esp32c3dev
+build_flags = ${env:esp32c3dev.build_flags} -D CLIENT_SSID='"stonet2"' -D CLIENT_PASS='"fuckup23"' -D USERMOD_FOUR_LINE_DISPLAY
+lib_deps = 
+  ${env:esp32c3dev.lib_deps}
+  olikraus/U8g2 @ ^2.28.8
